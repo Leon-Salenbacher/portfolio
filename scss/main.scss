@@ -1,0 +1,150 @@
+@import "_var";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.big-box{
+    width: $full-side-width;
+    height: $full-side-height;
+
+    background-color: $default-background;
+}
+
+.content-container{
+    width: 100%;
+    height: 100%;
+}
+
+
+#landingpage{
+    $landingpage-min-height: 660px;
+
+    z-index: 3;
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    min-height: $landingpage-min-height;
+
+    @media only screen and (min-width: 1000px){
+        #text-container{
+            h1{
+                font-size: 75px;
+            }
+
+            h2{
+                font-size: 60px;
+            }
+            
+            h3{
+                font-size: 50px;
+            }
+
+            h4{
+                font-size: 32px;
+            }
+        }    
+    }
+    
+    section{
+        z-index: 4;
+        width: 50%;
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+
+
+        #text-container{
+            display: grid;
+            grid-template-rows: 1fr;
+
+            justify-content: center;
+
+            h1{
+                font-weight: bolder;
+                margin-left: 2%;
+            }
+
+            #inner{
+                display: flex;
+
+                #rotated{
+                    width: 12%;
+                    h2{
+                        text-align: center;
+                        transform: rotate(-90deg);
+                        margin-top: 38%;
+                    }
+                }
+
+                #name{
+                    margin-top: -0.5%;
+                    h3{
+
+                    }
+
+                    h4{
+                        font-weight: lighter;
+                        margin-top: -0.5%;
+                    }
+                }
+            }
+        }
+    }
+    
+    aside{
+        z-index: 4;
+        width: 50%;
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+
+        #personal-img-container{
+            /* width: 60%;
+            height: 60%; */
+            
+            background-color: white;
+            border: 49% solid black;
+            border-radius: 50%;
+
+            width: 50%;
+            height:0;
+            padding:25% 0;
+            border-radius:50%;
+ 
+            overflow: hidden;
+            position: relative;
+            display: flex;
+
+            justify-content: center;
+            img{
+                height: auto;
+                width: 65%;
+
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+
+    #line{
+        left: 0;
+        top: 10%;
+
+        width: 100vw;
+        height: 85vh;
+        min-height: $landingpage-min-height - 234;
+        
+        position: absolute;
+        z-index: 2;
+    }
+    
+}
