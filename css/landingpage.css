@@ -1,3 +1,43 @@
+@-webkit-keyframes border-animation {
+  0% {
+    border-top: solid;
+  }
+  25% {
+    border-top: solid;
+    border-right: solid;
+  }
+  50% {
+    border-top: solid;
+    border-right: solid;
+    border-bottom: solid;
+  }
+  100% {
+    border-top: solid;
+    border-right: solid;
+    border-bottom: solid;
+    border-left: solid;
+  }
+}
+@keyframes border-animation {
+  0% {
+    border-top: solid;
+  }
+  25% {
+    border-top: solid;
+    border-right: solid;
+  }
+  50% {
+    border-top: solid;
+    border-right: solid;
+    border-bottom: solid;
+  }
+  100% {
+    border-top: solid;
+    border-right: solid;
+    border-bottom: solid;
+    border-left: solid;
+  }
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -20,6 +60,59 @@ body {
   height: 100%;
 }
 
+@media only screen and (min-width: 1300px) {
+  #nav-bar {
+    width: 580px;
+  }
+  #landingpage #text-container h1 {
+    font-size: 75px;
+    font-size: 4vw;
+  }
+  #landingpage #text-container h2 {
+    font-size: 60px;
+    font-size: 3.1vw;
+  }
+  #landingpage #text-container h3 {
+    font-size: 50px;
+    font-size: 2.6vw;
+  }
+  #landingpage #text-container h4 {
+    font-size: 32px;
+    font-size: 1.68vw;
+  }
+  #landingpage #personal-img-container {
+    width: min(68%, 650px);
+    padding: calc(min(68%, 650px) / 2) 0;
+  }
+}
+header {
+  position: absolute;
+  right: 90px;
+  top: 50px;
+  z-index: 100;
+}
+header #nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header #nav-bar a {
+  padding: 10px 25px;
+  font-weight: bolder;
+  font-size: 23px;
+  cursor: pointer;
+}
+header #nav-bar a:last-of-type {
+  border: solid;
+  border-radius: 50px;
+}
+header #nav-bar a:last-of-type:hover {
+  background-color: aliceblue;
+}
+
 #landingpage {
   z-index: 3;
   display: -webkit-box;
@@ -28,20 +121,6 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 660px;
-}
-@media only screen and (min-width: 1000px) {
-  #landingpage #text-container h1 {
-    font-size: 75px;
-  }
-  #landingpage #text-container h2 {
-    font-size: 60px;
-  }
-  #landingpage #text-container h3 {
-    font-size: 50px;
-  }
-  #landingpage #text-container h4 {
-    font-size: 32px;
-  }
 }
 #landingpage section {
   z-index: 4;
@@ -102,15 +181,14 @@ body {
           justify-content: center;
 }
 #landingpage aside #personal-img-container {
-  /* width: 60%;
-  height: 60%; */
   background-color: white;
-  border: 49% solid black;
+  border: 10px solid black;
   border-radius: 50%;
-  width: 50%;
+  /* $picture-width: 70%;
+  width: $picture-width;
+  padding: calc($picture-width / 2) 0; */
   height: 0;
-  padding: 25% 0;
-  border-radius: 50%;
+  margin-left: 8vw;
   overflow: hidden;
   position: relative;
   display: -webkit-box;

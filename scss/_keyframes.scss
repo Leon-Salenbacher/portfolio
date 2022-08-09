@@ -1,0 +1,26 @@
+@import "_global-var";
+
+@keyframes border-animation{
+    0%{
+        border-top: solid;
+    }
+
+    25%{
+        border-top: solid;
+        border-right: solid;
+    }
+
+    50%{
+        border-top: solid;
+        border-right: solid;
+        border-bottom: solid;
+    }
+
+    100%{
+        border-top: solid;
+        border-right: solid;
+        border-bottom: solid;
+        border-left: solid;
+
+    }
+}

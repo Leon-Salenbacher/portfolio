@@ -1,4 +1,5 @@
-@import "_var";
+@import "../_global-var";
+@import "../_keyframes";
 
 *{
     box-sizing: border-box;
@@ -22,6 +23,73 @@ body{
     height: 100%;
 }
 
+@media only screen and (min-width: 1300px){
+    #nav-bar{
+        width: 580px;
+    }
+
+    #landingpage{
+        #text-container{
+            h1{
+                font-size: 75px;
+                font-size: 4vw;
+            }
+    
+            h2{
+                font-size: 60px;
+                font-size: 3.1vw;
+            }
+    
+            h3{
+                font-size: 50px;
+                font-size: 2.6vw;
+            }
+    
+            h4{
+                font-size: 32px;
+                font-size: 1.68vw;
+            }
+        }    
+    
+        #personal-img-container{
+            $picture-width: min(68%,650px);
+            width: $picture-width;
+            padding: calc($picture-width / 2) 0;
+    
+        }
+    }
+}
+
+header{
+    position: absolute;
+    right: 90px;
+    top: 50px;
+    z-index: 100;
+
+    #nav-bar{
+        
+        
+        display: flex;
+        justify-content: space-between;
+        a{
+            padding: 10px 25px;
+
+            font-weight: bolder;
+            font-size: 23px;
+            cursor: pointer;
+
+            &:last-of-type{
+                border: solid;
+                border-radius: 50px;
+                
+                &:hover{
+                    background-color: aliceblue;
+                }
+            }
+        }
+    }
+}
+
 
 #landingpage{
     $landingpage-min-height: 660px;
@@ -32,25 +100,7 @@ body{
     position: relative;
     min-height: $landingpage-min-height;
 
-    @media only screen and (min-width: 1000px){
-        #text-container{
-            h1{
-                font-size: 75px;
-            }
-
-            h2{
-                font-size: 60px;
-            }
-            
-            h3{
-                font-size: 50px;
-            }
-
-            h4{
-                font-size: 32px;
-            }
-        }    
-    }
+    
     
     section{
         z-index: 4;
@@ -107,23 +157,20 @@ body{
         align-items: center;
         justify-content: center;
 
-        #personal-img-container{
-            /* width: 60%;
-            height: 60%; */
-            
+        #personal-img-container{            
             background-color: white;
-            border:  solid black;
+            border: 10px solid black;
             border-radius: 50%;
 
-            width: 50%;
-            height:0;
-            padding:25% 0;
-            border-radius:50%;
- 
+            /* $picture-width: 70%;
+            width: $picture-width;
+            padding: calc($picture-width / 2) 0; */
+            height:0;            
+
+            margin-left: 8vw;
             overflow: hidden;
             position: relative;
             display: flex;
-
             justify-content: center;
             img{
                 height: auto;
