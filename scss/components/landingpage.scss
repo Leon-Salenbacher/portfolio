@@ -30,24 +30,43 @@ body{
 
     #landingpage{
         #text-container{
+            $landingpage-font-size-default-min: 40px;
+            $landingpage-font-size-default-max: 60px;
+
             h1{
                 font-size: 75px;
-                font-size: 4vw;
+                font-size: clamp(
+                    calc($landingpage-font-size-default-min + 25px),
+                    4vw,
+                    calc($landingpage-font-size-default-max + 25px)                
+                );
             }
     
             h2{
                 font-size: 60px;
-                font-size: 3.1vw;
+                font-size: clamp(
+                    calc($landingpage-font-size-default-min + 10px),
+                    3.1vw,
+                    calc($landingpage-font-size-default-max + 10px)                
+                );
             }
     
             h3{
                 font-size: 50px;
-                font-size: 2.6vw;
+                font-size: clamp(
+                    $landingpage-font-size-default-min,
+                    2.6vw,
+                    $landingpage-font-size-default-max
+                );
             }
     
             h4{
                 font-size: 32px;
-                font-size: 1.68vw;
+                font-size: clamp(
+                    calc($landingpage-font-size-default-min - 12px),
+                    1.68vw,
+                    calc($landingpage-font-size-default-max - 18px)                
+                );
             }
         }    
     
@@ -55,7 +74,6 @@ body{
             $picture-width: min(68%,650px);
             width: $picture-width;
             padding: calc($picture-width / 2) 0;
-    
         }
     }
 }

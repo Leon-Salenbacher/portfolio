@@ -66,19 +66,19 @@ body {
   }
   #landingpage #text-container h1 {
     font-size: 75px;
-    font-size: 4vw;
+    font-size: clamp(65px, 4vw, 85px);
   }
   #landingpage #text-container h2 {
     font-size: 60px;
-    font-size: 3.1vw;
+    font-size: clamp(50px, 3.1vw, 70px);
   }
   #landingpage #text-container h3 {
     font-size: 50px;
-    font-size: 2.6vw;
+    font-size: clamp(40px, 2.6vw, 60px);
   }
   #landingpage #text-container h4 {
     font-size: 32px;
-    font-size: 1.68vw;
+    font-size: clamp(28px, 1.68vw, 42px);
   }
   #landingpage #personal-img-container {
     width: min(68%, 650px);
