@@ -75,6 +75,18 @@ body{
             width: $picture-width;
             padding: calc($picture-width / 2) 0;
         }
+
+        #line{    
+            width: 100vw;
+            height: $line-default-height;
+        }
+    }
+}
+
+@media only screen and (max-width: 1299px){
+    #line{
+        width: 176%;
+        height: $line-default-height;
     }
 }
 
@@ -85,8 +97,6 @@ header{
     z-index: 100;
 
     #nav-bar{
-        
-        
         display: flex;
         justify-content: space-between;
         a{
@@ -108,18 +118,13 @@ header{
     }
 }
 
-
 #landingpage{
-    $landingpage-min-height: 660px;
-
     z-index: 3;
     display: flex;
     overflow-x: hidden;
     position: relative;
     min-height: $landingpage-min-height;
 
-    
-    
     section{
         z-index: 4;
         width: 50%;
@@ -199,17 +204,13 @@ header{
             }
         }
     }
-
+    
     #line{
         left: 0;
-        top: 10%;
+        top: 12%;
+        min-height: $landingpage-min-height - 150px;
 
-        width: 100vw;
-        height: 85vh;
-        min-height: $landingpage-min-height - 234;
-        
         position: absolute;
         z-index: 2;
     }
-    
 }

@@ -84,6 +84,16 @@ body {
     width: min(68%, 650px);
     padding: calc(min(68%, 650px) / 2) 0;
   }
+  #landingpage #line {
+    width: 100vw;
+    height: 83vh;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  #line {
+    width: 176%;
+    height: 83vh;
+  }
 }
 header {
   position: absolute;
@@ -120,7 +130,7 @@ header #nav-bar a:last-of-type:hover {
   display: flex;
   overflow-x: hidden;
   position: relative;
-  min-height: 660px;
+  min-height: 820px;
 }
 #landingpage section {
   z-index: 4;
@@ -206,10 +216,8 @@ header #nav-bar a:last-of-type:hover {
 }
 #landingpage #line {
   left: 0;
-  top: 10%;
-  width: 100vw;
-  height: 85vh;
-  min-height: 426px;
+  top: 12%;
+  min-height: 670px;
   position: absolute;
   z-index: 2;
 }
