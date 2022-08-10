@@ -52,6 +52,7 @@ body {
 .big-box {
   width: calc(100vw - 17px);
   height: 100vh;
+  min-width: 600px;
   background-color: #D7D7D7;
 }
 
@@ -64,23 +65,46 @@ body {
   #nav-bar {
     width: 580px;
   }
-  #landingpage #text-container h1 {
+  #landingpage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landingpage section {
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #landingpage section #text-container h1 {
     font-size: 75px;
     font-size: clamp(65px, 4vw, 85px);
   }
-  #landingpage #text-container h2 {
+  #landingpage section #text-container h2 {
     font-size: 60px;
     font-size: clamp(50px, 3.1vw, 70px);
   }
-  #landingpage #text-container h3 {
+  #landingpage section #text-container h3 {
     font-size: 50px;
     font-size: clamp(40px, 2.6vw, 60px);
   }
-  #landingpage #text-container h4 {
+  #landingpage section #text-container h4 {
     font-size: 32px;
     font-size: clamp(28px, 1.68vw, 42px);
   }
-  #landingpage #personal-img-container {
+  #landingpage aside {
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #landingpage aside #personal-img-container {
     width: min(68%, 650px);
     padding: calc(min(68%, 650px) / 2) 0;
   }
@@ -90,6 +114,63 @@ body {
   }
 }
 @media only screen and (max-width: 1299px) {
+  #landingpage {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  #landingpage section {
+    outline: 2px solid red;
+    width: 100%;
+    grid-area: 1/1/2/2;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    margin-bottom: -20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #landingpage section #landing-main-content {
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  #landingpage section #landing-main-content #text-container h1 {
+    font-size: 75px;
+    font-size: clamp(65px, 4vw, 85px);
+  }
+  #landingpage section #landing-main-content #text-container h2 {
+    font-size: 60px;
+    font-size: clamp(50px, 3.1vw, 70px);
+  }
+  #landingpage section #landing-main-content #text-container h3 {
+    font-size: 50px;
+    font-size: clamp(40px, 2.6vw, 60px);
+  }
+  #landingpage section #landing-main-content #text-container h4 {
+    font-size: 32px;
+    font-size: clamp(28px, 1.68vw, 42px);
+  }
+  #landingpage aside {
+    outline: 2px solid green;
+    width: 100%;
+    grid-area: 2/1/3/2;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landingpage aside #personal-img-container {
+    width: min(40%, 650px);
+    padding: calc(min(40%, 650px) / 2) 0;
+  }
   #line {
     width: 176%;
     height: 83vh;
@@ -125,61 +206,72 @@ header #nav-bar a:last-of-type:hover {
 
 #landingpage {
   z-index: 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   overflow-x: hidden;
   position: relative;
   min-height: 820px;
 }
 #landingpage section {
   z-index: 4;
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-#landingpage section #text-container {
+#landingpage section #landing-main-content {
+  display: grid;
+}
+#landingpage section #landing-main-content #text-container {
   display: grid;
   grid-template-rows: 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-#landingpage section #text-container h1 {
+#landingpage section #landing-main-content #text-container h1 {
   font-weight: bolder;
   margin-left: 2%;
 }
-#landingpage section #text-container #inner {
+#landingpage section #landing-main-content #text-container #inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-#landingpage section #text-container #inner #rotated {
+#landingpage section #landing-main-content #text-container #inner #rotated {
   width: 12%;
 }
-#landingpage section #text-container #inner #rotated h2 {
+#landingpage section #landing-main-content #text-container #inner #rotated h2 {
   text-align: center;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   margin-top: 38%;
 }
-#landingpage section #text-container #inner #name {
+#landingpage section #landing-main-content #text-container #inner #name {
   margin-top: -0.5%;
 }
-#landingpage section #text-container #inner #name h4 {
+#landingpage section #landing-main-content #text-container #inner #name h4 {
   font-weight: lighter;
   margin-top: -0.5%;
 }
-#landingpage aside {
-  z-index: 4;
-  width: 50%;
+#landingpage section #landing-main-content #landing-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-top: 10%;
+  margin-left: 2.5%;
+}
+#landingpage section #landing-main-content #landing-icons .landing-icon {
+  width: clamp(50px, 3vw, 70px);
+  height: clamp(50px, 3vw, 70px);
+  -webkit-box-shadow: 0px 0.25vw 0.25vw rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0.25vw 0.25vw rgba(0, 0, 0, 0.25);
+  background-color: #C4C4C4;
+  border-radius: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,6 +281,21 @@ header #nav-bar a:last-of-type:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
+}
+#landingpage section #landing-main-content #landing-icons .landing-icon:hover {
+  background-color: #a5a3a3;
+}
+#landingpage section #landing-main-content #landing-icons .landing-icon img {
+  /* width: 1.8vw; */
+  width: calc(clamp(50px, 3vw, 70px) / 1.666);
+  height: auto;
+}
+#landingpage aside {
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 #landingpage aside #personal-img-container {
   background-color: white;
