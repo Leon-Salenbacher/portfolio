@@ -106,7 +106,6 @@ body{
         grid-row-gap: 0px; 
 
         section{   
-            outline: 2px solid red;
             width: 100%;
             grid-area: 1 / 1 / 2 / 2;
             
@@ -164,18 +163,33 @@ body{
         }
         
         aside{
-            outline: 2px solid green;
             width: 100%;
             grid-area: 2 / 1 / 3 / 2;
-            justify-content: center;
-            align-items: center;
+            
+            align-items: flex-start !important;
 
-            #personal-img-container{
-
-                $picture-width: min(40%, 650px);
-                width: $picture-width;
-                padding: calc($picture-width / 2) 0;
+            @media only screen and (min-width: 650px){
+                margin-top: -10%;
+                margin-left: 2%;
+                justify-content: end !important;
+                #personal-img-container{
+                    margin-right: 10%;
+                    $picture-width: min(50%, 470px);
+                    width: $picture-width;
+                    padding: calc($picture-width / 2) 0;
+                }
             }
+
+            @media only screen and (max-width: 650px){
+                justify-content: center;
+                #personal-img-container{
+                    margin-top: 5%;
+                    $picture-width: min(59%, 600px);
+                    width: $picture-width;
+                    padding: calc($picture-width / 2) 0;
+                }
+            }
+                        
         }
     }
 
@@ -263,7 +277,7 @@ header{
                             margin-top: -0.5%;
                         }
                     }
-                }
+                 }
             }
     
             #landing-icons{
