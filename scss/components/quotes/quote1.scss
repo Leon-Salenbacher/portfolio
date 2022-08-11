@@ -1,0 +1,35 @@
+#quote1-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #quote1{    
+        position: relative;
+        
+        .part{
+            font-size: clamp(20px, 2.1vw, 40px);
+            position: absolute;
+            
+            $distance: -28.5%;
+
+            &:first-of-type{
+                top: 20.5%;
+                /* right: -25.25%; */
+                right: $distance;
+                
+            }
+
+            &:last-of-type{
+                top: 43.5%;
+                left: $distance;
+            }
+        }
+
+        img{
+            width: 25vw;
+            max-width: 480px;
+            min-width: 240px;
+            height: auto; 
+        }
+    }
+}

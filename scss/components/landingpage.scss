@@ -1,30 +1,6 @@
 @import "../_global-var";
 @import "../_keyframes";
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    font-family: sans-serif;
-}
-
-.big-box{
-    width: $full-side-width;
-    height: $full-side-height;
-
-    min-width: $min-width;
-
-    background-color: $default-background;
-}
-
-.content-container{
-    width: 100%;
-    height: 100%;
-}
-
 @media only screen and (min-width: 1300px){
     #nav-bar{
         width: 580px;

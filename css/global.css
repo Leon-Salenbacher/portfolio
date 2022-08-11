@@ -1,0 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.big-box {
+  width: calc(100vw - 17px);
+  height: 100vh;
+  min-width: 600px;
+  background-color: #D7D7D7;
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+}

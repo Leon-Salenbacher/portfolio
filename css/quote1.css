@@ -1,0 +1,33 @@
+#quote1-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#quote1-container #quote1 {
+  position: relative;
+}
+#quote1-container #quote1 .part {
+  font-size: clamp(20px, 2.1vw, 40px);
+  position: absolute;
+}
+#quote1-container #quote1 .part:first-of-type {
+  top: 20.5%;
+  /* right: -25.25%; */
+  right: -28.5%;
+}
+#quote1-container #quote1 .part:last-of-type {
+  top: 43.5%;
+  left: -28.5%;
+}
+#quote1-container #quote1 img {
+  width: 25vw;
+  max-width: 480px;
+  min-width: 240px;
+  height: auto;
+}

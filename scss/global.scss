@@ -1,0 +1,26 @@
+@import "./global-var";
+@import "./global-var";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.big-box{
+    width: $full-side-width;
+    height: $full-side-height;
+
+    min-width: $min-width;
+
+    background-color: $default-background;
+}
+
+.content-container{
+    width: 100%;
+    height: 100%;
+}
