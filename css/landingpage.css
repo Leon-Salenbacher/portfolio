@@ -197,11 +197,21 @@ body {
 }
 header {
   position: absolute;
-  right: 90px;
-  top: 50px;
   z-index: 100;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  min-width: 600px;
 }
 header #nav-bar {
+  margin-top: max(30px, 2%);
+  margin-right: 5%;
+  /* right: 5%;
+  top: 3.5%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,7 +237,7 @@ header #nav-bar a:last-of-type:hover {
   z-index: 3;
   overflow-x: hidden;
   position: relative;
-  min-height: 820px;
+  min-height: 900px;
 }
 #landingpage section {
   z-index: 4;
@@ -343,7 +353,7 @@ header #nav-bar a:last-of-type:hover {
 #landingpage #line {
   left: 0;
   top: 12%;
-  min-height: 670px;
+  min-height: 750px;
   position: absolute;
   z-index: 2;
 }

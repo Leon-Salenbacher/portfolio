@@ -201,11 +201,18 @@ body{
 
 header{
     position: absolute;
-    right: 90px;
-    top: 50px;
     z-index: 100;
-
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    
+    min-width: $min-width;
     #nav-bar{
+        margin-top: max(30px, 2%);
+        margin-right: 5%;
+
+        /* right: 5%;
+        top: 3.5%; */
         display: flex;
         justify-content: space-between;
         a{
