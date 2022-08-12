@@ -1,0 +1,38 @@
+@import "../global-var";
+
+#sidebar{   
+    display: grid;
+    position: fixed;
+    gap: 25px;
+
+    bottom: 12%;
+    left: 4%;
+
+    &-displayoff{
+        display: none;  
+    }
+
+    .sidebar-icon{
+        background-color: $default-icon-background;
+        $size: clamp(50px, 3vw, 70px);
+        width: $size;
+        height: $size;
+        box-shadow: 0px 0.25vw 0.25vw rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $default-icon-background-hover;
+        }
+    }
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        :last-of-type{
+            
+        }
+    }
+}
