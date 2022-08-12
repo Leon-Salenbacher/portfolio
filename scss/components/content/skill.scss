@@ -1,0 +1,28 @@
+#skill-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    h1{
+
+    }
+
+    #skillset{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 70px;
+        grid-row-gap: 90px; 
+
+        height: 50%;
+        margin-top: 5%;
+
+        .skill-icon{
+            display: grid;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }        
+}
