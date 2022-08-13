@@ -4,12 +4,22 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    
+    height: 48.3vw;
+    max-height: 100vh;  
+    min-height: 500px;  
+    outline: solid;
+
     #project-show-container{
+        $max-height: 540px;
         width: 50%;
         height: 60%;
         height: 28vw;
-        margin-top: 5%;
+        max-height: $max-height;
+        min-height: 204px;
+        max-width: 960px;
+        min-width: 356px;
+        /* margin-top: 7vw; */
+        margin-top: 100px;
 
         #project-show{
             border: solid;
@@ -28,7 +38,7 @@
         }
 
         #slider-container{
-            margin-top: 10px;
+            margin-top: 25px;
             height: 10%;
             display: flex;
             justify-content: center;
@@ -40,7 +50,7 @@
                 grid-template-rows: 1fr;
                 grid-column-gap: 0px;
                 grid-row-gap: 30px; 
-                width: 220px;
+                width: 24%;
 
                 .slider-item-container{
                     display: flex;
@@ -50,11 +60,17 @@
 
                     .slider-item{
                         $size: 21px;
+                        $size: 50%;
+                        
                         border: 2px solid black;
                         border-radius: 100px;
-                        width: $size;
-                        height: $size;
+                        /* width: calc($size /2);
+                        height: $size; */
     
+                        height: $size;
+                        width: 0;
+                        padding: calc($size / 2);
+
                         background-color: transparent;
                     }
 
