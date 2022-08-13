@@ -29,9 +29,11 @@ body{
     position: absolute;
     border-bottom: 2px solid black;    
     height: 5vw;
-    padding: 0 8%;
+    min-height: 80px;
+    max-height: 95px;
+    padding: 0 100px;
 
     top: 7%;
-    font-size: 2.3vw;
+    font-size: clamp(35px, 2.3vw, 50px);
     font-weight: bolder;
 }

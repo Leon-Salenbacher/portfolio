@@ -15,6 +15,7 @@
 @media only screen and (max-width: 1299px){
     #skill-box{
         height: 110vw;
+        min-height: 1250px;
         #skill-container{
             #skillset{
                 margin-top: -10%;
@@ -26,7 +27,6 @@
         }
     }
 }
-
 
 #skill-container{
     display: flex;
