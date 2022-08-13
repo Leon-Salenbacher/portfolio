@@ -30,7 +30,6 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  outline: solid;
 }
 #skill-container #skillset {
   display: grid;
