@@ -1,6 +1,7 @@
 @import "../global-var";
 
 #sidebar{   
+    z-index: 10;
     display: grid;
     position: fixed;
     gap: 25px;

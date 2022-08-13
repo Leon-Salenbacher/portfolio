@@ -1,3 +1,24 @@
+@media only screen and (min-width: 1300px) {
+  #skill-container #skillset {
+    margin-top: 5%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 90px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  #skill-box {
+    height: 110vw;
+  }
+  #skill-box #skill-container #skillset {
+    margin-top: -10%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 90px;
+  }
+}
 #skill-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,15 +30,11 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  outline: solid;
 }
 #skill-container #skillset {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 70px;
-  grid-row-gap: 90px;
   height: 50%;
-  margin-top: 5%;
 }
 #skill-container #skillset .skill-icon {
   display: grid;
@@ -28,4 +45,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+#skill-container #skillset .skill-icon h2 {
+  font-weight: 100;
+  margin-top: 15%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
