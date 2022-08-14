@@ -24,7 +24,32 @@
   /* margin-top: 7vw; */
   margin-top: 100px;
 }
+#project-container #project-show-container #project-title-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#project-container #project-show-container #project-title-container h2 {
+  text-align: center;
+  font-size: 25px;
+  font-size: clamp(12px, 1.35vw, 25px);
+  font-weight: 400;
+  margin: 0 clamp(12px, 1.35vw, 30px);
+}
+#project-container #project-show-container #project-title-container img {
+  width: 5vw;
+  min-width: 50px;
+  max-width: 130px;
+}
 #project-container #project-show-container #project-show {
+  cursor: pointer;
   border: solid;
   width: 100%;
   height: 90%;
