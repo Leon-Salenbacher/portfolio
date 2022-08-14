@@ -1,0 +1,39 @@
+#quote3-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#quote3-container #quote3 {
+  position: relative;
+  width: 38vw;
+  min-width: 230px;
+  max-width: 730px;
+  height: auto;
+}
+#quote3-container #quote3 img {
+  width: 100%;
+  height: 100%;
+}
+#quote3-container #quote3 h1 {
+  top: 23%;
+  left: 4.5%;
+}
+#quote3-container #quote3 h2 {
+  top: 43%;
+  right: 1%;
+}
+#quote3-container #quote3 h3 {
+  bottom: 10%;
+  left: 17%;
+}
+#quote3-container #quote3 .text-part {
+  position: absolute;
+  text-align: center;
+  font-size: clamp(15px, 2.3vw, 44px);
+}
