@@ -5,23 +5,83 @@
 
     #quote1{    
         position: relative;
-        
+        $distance: -28.5%;
+        $jumps: 45%;
+
         .part{
             font-size: clamp(20px, 2.1vw, 40px);
             position: absolute;
             
-            $distance: -28.5%;
+            
 
             &:first-of-type{
                 top: 20.5%;
-                /* right: -25.25%; */
-                right: $distance;
-                
             }
     
             &:last-of-type{
                 top: 43.5%;
-                left: $distance;
+            }
+        }
+
+        .animation-state{
+            &-100{
+                &:first-of-type{
+                    right: $distance;
+                }
+
+                &:last-of-type{
+                    left: $distance;
+                }
+            }
+            
+            &-80{
+                &:first-of-type{
+                    right: calc($distance - $jumps * 1);
+                }
+
+                &:last-of-type{
+                    left: calc($distance - $jumps * 1);
+                }
+            }
+
+            &-60{
+                &:first-of-type{
+                    right: calc($distance - $jumps * 2);
+                }
+
+                &:last-of-type{
+                    left: calc($distance - $jumps * 2);
+                }
+            }
+
+            &-40{
+                &:first-of-type{
+                    right: calc($distance - $jumps * 3);
+                }
+
+                &:last-of-type{
+                    left: calc($distance - $jumps * 3);
+                }
+            }
+
+            &-20{
+                &:first-of-type{
+                    right: calc($distance - $jumps * 4);
+                }
+
+                &:last-of-type{
+                    left: calc($distance - $jumps * 4);
+                }
+            }
+
+            &-0{
+                &:first-of-type{
+                    right: calc($distance - $jumps * 5);
+                }
+
+                &:last-of-type{
+                    left: calc($distance - $jumps * 5);
+                }
             }
         }
 

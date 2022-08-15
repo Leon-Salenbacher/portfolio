@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="css/quote1.css">
     <link rel="stylesheet" href="css/quote2.css">
     <link rel="stylesheet" href="css/quote3.css">
+
+    <script type="text/javascript" src="/script/project.js" defer></script>
+    <script type="text/javascript" src="/script/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -45,13 +48,13 @@
                             </div>
                         </div>
                         <div id="landing-icons">
-                            <div class="landing-icon">
+                            <div class="landing-icon" onclick="openEmail('leon@salenbacher.com')">
                                 <img src="./img/social-icons/email_icon.png" alt="email-icon">
                             </div>
-                            <div class="landing-icon">
+                            <div class="landing-icon" onclick="openURL_newTab('https://github.com/Leon-BoU')">
                                 <img src="./img/social-icons/github_icon.png" alt="github-icon">
                             </div>
-                            <div class="landing-icon">
+                            <div class="landing-icon" onclick="openURL_newTab('https://www.linkedin.com/in/leon-salenbacher-44a6b818b')">
                                 <img src="./img/social-icons/linkedIn_icon.png" alt="linkedin-icon">
                             </div>
                         </div>
@@ -87,8 +90,8 @@
             <div class="big-box">
                 <div class="content-container" id="quote1-container">
                     <div id="quote1">
-                        <h1 class="part">"DO WHAT YOU LOVE</h1>
-                        <h1 class="part">LOVE WHAT YOU DO"</h1>
+                        <h1 class="part animation-state-0">"DO WHAT YOU LOVE</h1>
+                        <h1 class="part animation-state-0">LOVE WHAT YOU DO"</h1>
                         <img src="./img/quotes/quote1/triangle.png" alt="triangle">
                     </div>
                 </div>
@@ -141,9 +144,9 @@
             <div class="big-box">
                 <div class="content-container" id="quote2-container">
                     <div id="quote2">   
-                        <h1 class="part">"If you cannot do<br>Great things</h1>
-                        <h1 class="part">Do small things<br>in a great way."</h1>
-                        <img src="./img/quotes/quote2/circle_purple.png" alt="purpel-circle">
+                        <h1 class="part animation-state-0">"If you cannot do<br>Great things</h1>
+                        <h1 class="part animation-state-0">Do small things<br>in a great way."</h1>
+                        <img class="animation-state-0" src="./img/quotes/quote2/circle_purple.png" alt="purpel-circle">
                     </div>
                 </div>
             </div>
@@ -158,30 +161,41 @@
                             <div class="project-title-higlighter">
                                 <img src="./img/project/icons/highlight-line.png" alt="----------------">
                             </div>
-                            <h2>Pathfinding Visualizer</h2>
+                            <h2 id="project_name">Pathfinding Visualizer</h2>
                             <div class="project-title-higlighter">
                                 <img src="./img/project/icons/highlight-line.png" alt="----------------">
                             </div>
                         </div>
-                        <div id="project-show">
-                            <img src="./img/project/projects/pathfinding_visualizer.png" alt="pathfinding-visualizer"> 
+                        <div id="project-show" onclick="openURL_newTab('https://leon-bou.github.io/pathfindingVisualizer/')">
+                            <img 
+                                id="project_img"
+                                src="./img/project/projects/pathfinding_visualizer.png" 
+                                alt="pathfinding-visualizer"  
+                            > 
+                            <!-- <img src="./img/project/projects/coming_soon.png" alt="coming-soon">  -->
                         </div>
                         <div id="slider-container">
                             <div id="slider">
-                                <div class="slider-item-container">
-                                    <img alt="slider-left" src="./img/project/icons/left_slide.png">
+                                <div class="slider-item-container" onclick="project_left()">
+                                    <img 
+                                        alt="slider-left" 
+                                        src="./img/project/icons/left_slide.png"
+                                    >
                                 </div>
-                                <div class="slider-item-container">
-                                    <div class="slider-item selected"></div>
+                                <div class="slider-item-container" onclick="project_click(0)">
+                                    <div id="project_slider" class="slider-item selected"></div>
                                 </div>
-                                <div class="slider-item-container">
-                                    <div class="slider-item"></div>
+                                <div class="slider-item-container" onclick="project_click(1)">
+                                    <div id="project_slider" class="slider-item"></div>
                                 </div>
-                                <div class="slider-item-container">
-                                    <div class="slider-item"></div>
+                                <div class="slider-item-container" onclick="project_click(2)">
+                                    <div id="project_slider" class="slider-item"></div>
                                 </div>
-                                <div class="slider-item-container">
-                                    <img alt="slider-right" src="./img/project/icons/right_slide.png">
+                                <div class="slider-item-container" onclick="project_right()">
+                                    <img 
+                                        alt="slider-right" 
+                                        src="./img/project/icons/right_slide.png"
+                                    >
                                 </div>
                             </div>
                         </div>
@@ -217,7 +231,7 @@
                             <input class="form-item" type="text" id="email" name="email" placeholder="EMAIL">
 
                             <!-- <label for="phoneNumber"></label> -->
-                            <input class="form-item" type="text" id="phoneNumber" placeholder="PHONE NUMBER">
+                            <input class="form-item" type="tel" id="phoneNumber" placeholder="PHONE NUMBER">
 
                             <textarea class="form-item" id="message" name="message" placeholder="YOUR MESSAGE"></textarea>
 

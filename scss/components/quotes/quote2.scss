@@ -16,12 +16,115 @@
 
             &:first-of-type{
                 top: 20%;
-                left: -32%;
+                /* left: -32%; */
             }
 
             &:last-of-type{
                 top: 63%;
-                right: -25%;
+                /* right: -25%; */
+            }
+        }
+
+        $jump: 37%;
+        $rotate: 72deg;
+
+        .animation-state{
+            &-100{
+                &:first-child{
+                    left: -32%;
+                }
+    
+                &:nth-child(2){
+                    right: -25%;
+                }
+
+                &:last-child{
+                    transform: rotate(0deg);
+                }
+            }
+
+            &-80{
+                &:first-child{
+                    left: calc(-32% - $jump * 1);
+                }
+    
+                &:nth-child(2){
+                    right: calc(-25% - $jump * 1);
+                }
+
+                &:last-child{
+                    transform: rotate(calc($rotate * 0));
+                }
+            }
+
+            &-64{
+                &:first-child{
+                    left: calc(-32% - $jump * 2);
+                }
+    
+                &:nth-child(2){
+                    right: calc(-25% - $jump * 2);
+                }
+
+                &:last-child{
+                    transform: rotate(calc($rotate * 1));
+                }
+            }
+
+            &-48{
+                &:first-child{
+                    left: calc(-32% - $jump * 3);
+                }
+    
+                &:nth-child(2){
+                    right: calc(-25% - $jump * 3);
+                }
+
+                &:last-child{
+                    transform: rotate(calc($rotate * 2));
+                }
+            }
+
+            &-32{
+                &:first-child{
+                    left: calc(-32% - $jump * 4);
+                }
+    
+                &:nth-child(2){
+                    right: calc(-25% - $jump * 4);
+                }
+
+                &:last-child{
+                    transform: rotate(calc($rotate * 3));
+                }
+            }
+
+            &-16{
+                &:first-child{
+                    left: calc(-32% - $jump * 5);
+                }
+    
+                &:nth-child(2){
+                    right: calc(-25% - $jump * 5);
+                }
+
+                &:last-child{
+                    transform: rotate(calc($rotate * 4));
+                }
+            }
+
+            &-0{
+                &:first-child{
+                    left: calc(-32% - $jump * 6);
+                }
+    
+                &:nth-child(2){
+                    right: calc(-25% - $jump * 6);
+                }
+
+                &:last-child{
+                    transform: rotate(calc($rotate * 5));
+                }
             }
         }
 

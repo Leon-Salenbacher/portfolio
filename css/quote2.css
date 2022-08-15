@@ -24,11 +24,81 @@
 }
 #quote2-container #quote2 .part:first-of-type {
   top: 20%;
-  left: -32%;
+  /* left: -32%; */
 }
 #quote2-container #quote2 .part:last-of-type {
   top: 63%;
+  /* right: -25%; */
+}
+#quote2-container #quote2 .animation-state-100:first-child {
+  left: -32%;
+}
+#quote2-container #quote2 .animation-state-100:nth-child(2) {
   right: -25%;
+}
+#quote2-container #quote2 .animation-state-100:last-child {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+#quote2-container #quote2 .animation-state-80:first-child {
+  left: -69%;
+}
+#quote2-container #quote2 .animation-state-80:nth-child(2) {
+  right: -62%;
+}
+#quote2-container #quote2 .animation-state-80:last-child {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+#quote2-container #quote2 .animation-state-64:first-child {
+  left: -106%;
+}
+#quote2-container #quote2 .animation-state-64:nth-child(2) {
+  right: -99%;
+}
+#quote2-container #quote2 .animation-state-64:last-child {
+  -webkit-transform: rotate(72deg);
+          transform: rotate(72deg);
+}
+#quote2-container #quote2 .animation-state-48:first-child {
+  left: -143%;
+}
+#quote2-container #quote2 .animation-state-48:nth-child(2) {
+  right: -136%;
+}
+#quote2-container #quote2 .animation-state-48:last-child {
+  -webkit-transform: rotate(144deg);
+          transform: rotate(144deg);
+}
+#quote2-container #quote2 .animation-state-32:first-child {
+  left: -180%;
+}
+#quote2-container #quote2 .animation-state-32:nth-child(2) {
+  right: -173%;
+}
+#quote2-container #quote2 .animation-state-32:last-child {
+  -webkit-transform: rotate(216deg);
+          transform: rotate(216deg);
+}
+#quote2-container #quote2 .animation-state-16:first-child {
+  left: -217%;
+}
+#quote2-container #quote2 .animation-state-16:nth-child(2) {
+  right: -210%;
+}
+#quote2-container #quote2 .animation-state-16:last-child {
+  -webkit-transform: rotate(288deg);
+          transform: rotate(288deg);
+}
+#quote2-container #quote2 .animation-state-0:first-child {
+  left: -254%;
+}
+#quote2-container #quote2 .animation-state-0:nth-child(2) {
+  right: -247%;
+}
+#quote2-container #quote2 .animation-state-0:last-child {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 #quote2-container #quote2 img {
   width: 100%;

@@ -18,12 +18,45 @@
 }
 #quote1-container #quote1 .part:first-of-type {
   top: 20.5%;
-  /* right: -25.25%; */
-  right: -28.5%;
 }
 #quote1-container #quote1 .part:last-of-type {
   top: 43.5%;
+}
+#quote1-container #quote1 .animation-state-100:first-of-type {
+  right: -28.5%;
+}
+#quote1-container #quote1 .animation-state-100:last-of-type {
   left: -28.5%;
+}
+#quote1-container #quote1 .animation-state-80:first-of-type {
+  right: -73.5%;
+}
+#quote1-container #quote1 .animation-state-80:last-of-type {
+  left: -73.5%;
+}
+#quote1-container #quote1 .animation-state-60:first-of-type {
+  right: -118.5%;
+}
+#quote1-container #quote1 .animation-state-60:last-of-type {
+  left: -118.5%;
+}
+#quote1-container #quote1 .animation-state-40:first-of-type {
+  right: -163.5%;
+}
+#quote1-container #quote1 .animation-state-40:last-of-type {
+  left: -163.5%;
+}
+#quote1-container #quote1 .animation-state-20:first-of-type {
+  right: -208.5%;
+}
+#quote1-container #quote1 .animation-state-20:last-of-type {
+  left: -208.5%;
+}
+#quote1-container #quote1 .animation-state-0:first-of-type {
+  right: -253.5%;
+}
+#quote1-container #quote1 .animation-state-0:last-of-type {
+  left: -253.5%;
 }
 #quote1-container #quote1 img {
   width: 25vw;
