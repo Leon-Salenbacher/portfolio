@@ -62,10 +62,6 @@
   #nav-bar {
     width: 580px;
   }
-  #nav-bar a {
-    text-decoration: none;
-    color: black;
-  }
   #landingpage {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -225,6 +221,8 @@ header #nav-bar a {
   font-weight: bolder;
   font-size: 23px;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 header #nav-bar a:last-of-type {
   border: solid;
