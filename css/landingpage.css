@@ -38,6 +38,26 @@
     border-left: solid;
   }
 }
+@-webkit-keyframes sidebar-animation {
+  from {
+    bottom: 12%;
+    left: -60px;
+  }
+  to {
+    bottom: 12%;
+    left: 4%;
+  }
+}
+@keyframes sidebar-animation {
+  from {
+    bottom: 12%;
+    left: -60px;
+  }
+  to {
+    bottom: 12%;
+    left: 4%;
+  }
+}
 @media only screen and (min-width: 1300px) {
   #nav-bar {
     width: 580px;

@@ -48,9 +48,11 @@
                             </div>
                         </div>
                         <div id="landing-icons">
-                            <div class="landing-icon" onclick="openEmail('leon@salenbacher.com')">
-                                <img src="./img/social-icons/email_icon.png" alt="email-icon">
-                            </div>
+                            <a href="mailto:leon@salenbacher.com">
+                                <div class="landing-icon">
+                                    <img src="./img/social-icons/email_icon.png" alt="email-icon">
+                                </div>
+                            </a>
                             <div class="landing-icon" onclick="openURL_newTab('https://github.com/Leon-BoU')">
                                 <img src="./img/social-icons/github_icon.png" alt="github-icon">
                             </div>
@@ -70,14 +72,16 @@
         </div>
 
         <aside>
-            <div id="sidebar"> <!-- -displayoff to deaktivate-->
-                <div class="sidebar-icon">
-                    <img src="./img/social-icons/email_icon.png" alt="email-icon">
-                </div>
-                <div class="sidebar-icon">
+            <div id="sidebar" class="sidebar-displayoff"> <!-- -displayoff to deaktivate-->
+                <a href="mailto:leon@salenbacher.com">
+                    <div class="sidebar-icon">
+                        <img src="./img/social-icons/email_icon.png" alt="email-icon">
+                    </div>
+                </a>
+                <div class="sidebar-icon" onclick="openURL_newTab('https://github.com/Leon-BoU')">
                     <img src="./img/social-icons/github_icon.png" alt="github-icon">
                 </div>
-                <div class="sidebar-icon">
+                <div class="sidebar-icon" onclick="openURL_newTab('https://www.linkedin.com/in/leon-salenbacher-44a6b818b')">
                     <img src="./img/social-icons/linkedIn_icon.png" alt="linkedin-icon">
                 </div>
                 <div>
@@ -172,7 +176,6 @@
                                 src="./img/project/projects/pathfinding_visualizer.png" 
                                 alt="pathfinding-visualizer"  
                             > 
-                            <!-- <img src="./img/project/projects/coming_soon.png" alt="coming-soon">  -->
                         </div>
                         <div id="slider-container">
                             <div id="slider">
@@ -223,19 +226,11 @@
                     <h1 class="content-headline">CONTACT</h1>
                     <div id="form-container">
                         <form>
-                            <!-- name, email, phoneNumber, message -->
-                            <!-- <label for="name">Name</label> -->
                             <input class="form-item" type="text" id="name" name="Name" placeholder="NAME">
-
-                            <!-- <label for="email"></label> -->
                             <input class="form-item" type="text" id="email" name="email" placeholder="EMAIL">
-
-                            <!-- <label for="phoneNumber"></label> -->
                             <input class="form-item" type="tel" id="phoneNumber" placeholder="PHONE NUMBER">
-
                             <textarea class="form-item" id="message" name="message" placeholder="YOUR MESSAGE"></textarea>
-
-                            <button type="button">SUBMIT</button>
+                            <button type="button" onclick="send_message()">SUBMIT</button>
                         </form>
                     </div>
                 </div>

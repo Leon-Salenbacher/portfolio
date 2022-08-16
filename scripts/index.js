@@ -5,6 +5,7 @@ const project_img = document.getElementById("project_img")
 const project_name = document.getElementById("project_name")
 const project_slider_items = document.querySelectorAll(".slider-item")
 const project_show = document.getElementById("project-show")
+const sidebar = document.getElementById("sidebar")
 
 /* Modules */
 function openURL_newTab(url){
@@ -12,11 +13,6 @@ function openURL_newTab(url){
     if(url != null){
         window.open(url, '_blank').focus();
     }
-}
-
-function openEmail(email){
-    /* open mail app */
-    parent.location=email
 }
 
 function get_yPOsition(){
@@ -36,9 +32,32 @@ function change_state(state, el){
     });
 }
 
+function show_sidebar(set){
+    sidebar.classList.forEach(c => {
+        if(set){
+            if(c === "sidebar-displayoff"){
+                sidebar.classList.remove("sidebar-displayoff")
+                sidebar.classList.add("sidebar")
+            }
+        }else{
+            if(c === "sidebar"){
+                sidebar.classList.remove("sidebar")
+                sidebar.classList.add("sidebar-displayoff")
+            }
+        }
+    })
+}
+
 /* Animation handler */
 window.onscroll = () => {
     const y = get_yPOsition()
+
+    /* show sidebar */
+    if(y >= 612){
+        show_sidebar(true)
+    }else{
+        show_sidebar(false)
+    }
 
     /* Animate quote1 */
     if(y <= 509){
@@ -136,4 +155,9 @@ function project_left(){
         cur_project = projects.length-1
     }
     change_project_to(projects[cur_project])
+}
+
+/* Send message */
+function send_message(){
+    window.alert("currently not working.")
 }

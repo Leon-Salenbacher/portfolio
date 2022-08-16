@@ -1,15 +1,79 @@
-#sidebar {
+@-webkit-keyframes border-animation {
+  0% {
+    border-top: solid;
+  }
+  25% {
+    border-top: solid;
+    border-right: solid;
+  }
+  50% {
+    border-top: solid;
+    border-right: solid;
+    border-bottom: solid;
+  }
+  100% {
+    border-top: solid;
+    border-right: solid;
+    border-bottom: solid;
+    border-left: solid;
+  }
+}
+@keyframes border-animation {
+  0% {
+    border-top: solid;
+  }
+  25% {
+    border-top: solid;
+    border-right: solid;
+  }
+  50% {
+    border-top: solid;
+    border-right: solid;
+    border-bottom: solid;
+  }
+  100% {
+    border-top: solid;
+    border-right: solid;
+    border-bottom: solid;
+    border-left: solid;
+  }
+}
+@-webkit-keyframes sidebar-animation {
+  from {
+    bottom: 12%;
+    left: -60px;
+  }
+  to {
+    bottom: 12%;
+    left: 4%;
+  }
+}
+@keyframes sidebar-animation {
+  from {
+    bottom: 12%;
+    left: -60px;
+  }
+  to {
+    bottom: 12%;
+    left: 4%;
+  }
+}
+.sidebar {
   z-index: 10;
   display: grid;
   position: fixed;
   gap: 25px;
   bottom: 12%;
   left: 4%;
+  -webkit-animation-name: sidebar-animation;
+          animation-name: sidebar-animation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
-#sidebar-displayoff {
+.sidebar-displayoff {
   display: none;
 }
-#sidebar .sidebar-icon {
+.sidebar .sidebar-icon {
   background-color: #C4C4C4;
   width: clamp(50px, 3vw, 70px);
   height: clamp(50px, 3vw, 70px);
@@ -18,10 +82,10 @@
   border-radius: 3px;
   cursor: pointer;
 }
-#sidebar .sidebar-icon:hover {
+.sidebar .sidebar-icon:hover {
   background-color: #a5a3a3;
 }
-#sidebar div {
+.sidebar div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

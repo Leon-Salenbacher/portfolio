@@ -1,6 +1,7 @@
 @import "../global-var";
+@import "../keyframes";
 
-#sidebar{   
+.sidebar{   
     z-index: 10;
     display: grid;
     position: fixed;
@@ -8,6 +9,10 @@
 
     bottom: 12%;
     left: 4%;
+    
+
+    animation-name: sidebar-animation;
+    animation-duration: 1s;
 
     &-displayoff{
         display: none;  
