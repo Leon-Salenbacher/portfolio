@@ -158,6 +158,20 @@ function project_left(){
 }
 
 /* Send message */
-function send_message(){
-    window.alert("currently not working.")
+function send_message(event){
+    /* window.alert("currently not working.") */
+    /* document.location = "mailto:leon@salenbacher.com" */
+    console.log(event.searchTerm.value)
 }
+
+contactForm.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const l = escape("\n")
+    const buildMessage = `Name: ${name_input.value} ${l}`
+        + `Email: ${email.value} ${l}`
+        + `Phone: ${phoneNumber.value} ${l}${l}`
+        + `Message: ${l} ${message.value}`
+
+    document.location = `mailto:leon@salenbacher.com?subject=Contact Request | ${name_input.value}`
+        + `&body= ${buildMessage}` 
+})
