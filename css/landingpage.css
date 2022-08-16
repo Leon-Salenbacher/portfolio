@@ -62,6 +62,10 @@
   #nav-bar {
     width: 580px;
   }
+  #nav-bar a {
+    text-decoration: none;
+    color: black;
+  }
   #landingpage {
     display: -webkit-box;
     display: -ms-flexbox;
