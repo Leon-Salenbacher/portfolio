@@ -159,8 +159,6 @@ function project_left(){
 
 /* Send message */
 function send_message(event){
-    /* window.alert("currently not working.") */
-    /* document.location = "mailto:leon@salenbacher.com" */
     console.log(event.searchTerm.value)
 }
 
@@ -172,6 +170,6 @@ contactForm.addEventListener('submit', (event) => {
         + `Phone: ${phoneNumber.value} ${l}${l}`
         + `Message: ${l} ${message.value}`
 
-    document.location = `mailto:leon@salenbacher.com?subject=Contact Request | ${name_input.value}`
+    document.location = `mailto:leon.salenbacher.contact@gmail.com?subject=Contact Request | ${name_input.value}`
         + `&body= ${buildMessage}` 
 })
