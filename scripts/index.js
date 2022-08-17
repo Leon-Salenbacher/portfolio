@@ -97,7 +97,7 @@ const projects = [
     new Project(
         'Pathfinding Visualizer',
         './img/project/projects/pathfinding_visualizer.png', 
-        'https://leon-bou.github.io/pathfindingVisualizer/',
+        'https://leon-salenbacher.github.io/pathfindingVisualizer/',
         0
     ),
     new Project(
