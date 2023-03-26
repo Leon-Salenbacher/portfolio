@@ -1,16 +1,24 @@
 @media only screen and (min-width: 1300px) {
-  #skill-container #skillset {
+  #skill-box {
+    height: 1000px;
+  }
+  #skill-box #skill-container #skillset {
     margin-top: 5%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 70px;
     grid-row-gap: 90px;
   }
+  #skill-box #skill-container #skillset .skill-icon:nth-of-type(9) {
+    grid-column: 2;
+  }
+  #skill-box #skill-container #skillset .skill-icon:nth-of-type(10) {
+    grid-column: 3;
+  }
 }
 @media only screen and (max-width: 1299px) {
   #skill-box {
-    height: 110vw;
-    min-height: 1250px;
+    height: 1150px;
   }
   #skill-box #skill-container #skillset {
     margin-top: -10%;
@@ -21,15 +29,9 @@
   }
 }
 #skill-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 #skill-container #skillset {
@@ -39,12 +41,11 @@
 #skill-container #skillset .skill-icon {
   display: grid;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  place-items: center;
+}
+#skill-container #skillset .skill-icon img {
+  max-height: 100px;
+  max-width: 85px;
 }
 #skill-container #skillset .skill-icon h2 {
   font-weight: 100;

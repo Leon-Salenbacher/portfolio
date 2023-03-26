@@ -1,23 +1,3 @@
-@-webkit-keyframes border-animation {
-  0% {
-    border-top: solid;
-  }
-  25% {
-    border-top: solid;
-    border-right: solid;
-  }
-  50% {
-    border-top: solid;
-    border-right: solid;
-    border-bottom: solid;
-  }
-  100% {
-    border-top: solid;
-    border-right: solid;
-    border-bottom: solid;
-    border-left: solid;
-  }
-}
 @keyframes border-animation {
   0% {
     border-top: solid;
@@ -38,16 +18,6 @@
     border-left: solid;
   }
 }
-@-webkit-keyframes sidebar-animation {
-  from {
-    bottom: 12%;
-    left: -60px;
-  }
-  to {
-    bottom: 12%;
-    left: 4%;
-  }
-}
 @keyframes sidebar-animation {
   from {
     bottom: 12%;
@@ -65,10 +35,8 @@
   gap: 25px;
   bottom: 12%;
   left: 4%;
-  -webkit-animation-name: sidebar-animation;
-          animation-name: sidebar-animation;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: sidebar-animation;
+  animation-duration: 1s;
 }
 .sidebar-displayoff {
   display: none;
@@ -77,8 +45,7 @@
   background-color: #C4C4C4;
   width: clamp(50px, 3vw, 70px);
   height: clamp(50px, 3vw, 70px);
-  -webkit-box-shadow: 0px 0.25vw 0.25vw rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0.25vw 0.25vw rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0.25vw 0.25vw rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   cursor: pointer;
 }
@@ -86,13 +53,7 @@
   background-color: #a5a3a3;
 }
 .sidebar div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
