@@ -1,241 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leon Salenbacher</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Leon Salenbacher</title>
 
-    <link rel="stylesheet" href="css/global.css">
-    
-    <link rel="stylesheet" href="css/landingpage.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    
-    <link rel="stylesheet" href="css/skill.css">
-    <link rel="stylesheet" href="css/project.css">
-    <link rel="stylesheet" href="css/contact.css">
-    
-    <link rel="stylesheet" href="css/quote1.css">
-    <link rel="stylesheet" href="css/quote2.css">
-    <link rel="stylesheet" href="css/quote3.css">
+        <link rel="stylesheet" href="css/global.css" />
 
-    <script type="text/javascript" src="./scripts/project.js" defer></script>
-    <script type="text/javascript" src="./scripts/index.js" defer></script>
-</head>
-<body>
-    <header>
-        <nav id="nav-bar">
-            <a href="#skill-link">Skills</a>
-            <a href="#project-link">Projects</a>
-            <a href="#contact-link">CONTACT ME</a>
-        </nav>
-    </header>
-    <main>
-        <div class="big-box">
-            <div class="content-container" id="landingpage">
-                <section>
-                    <div id="landing-main-content">
-                        <div id="text-container">
-                            <h1>Hi,</h1>
-                            <div id="inner">
-                                <div id="rotated">
-                                    <h2>I'm</h2>
-                                </div>
-                                <div id="name">
-                                    <h3>Leon Salenbacher</h3>
-                                    <h4>software-developer</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="landing-icons">
-                            <a href="mailto:leon.salenbacher.contact@gmail.com">
-                                <div class="landing-icon">
-                                    <img src="./img/social-icons/email_icon.png" alt="email-icon">
-                                </div>
-                            </a>
-                            <div class="landing-icon" onclick="openURL_newTab('https://github.com/Leon-Salenbacher')">
-                                <img src="./img/social-icons/github_icon.png" alt="github-icon">
-                            </div>
-                            <div class="landing-icon" onclick="openURL_newTab('https://www.linkedin.com/in/leon-salenbacher-44a6b818b')">
-                                <img src="./img/social-icons/linkedIn_icon.png" alt="linkedin-icon">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <aside>
-                    <div id="personal-img-container">
-                        <img src="./img/personal_img.png" alt="personal"> 
-                    </div>
-                </aside>
-                <img src="./img/landing_line.png" alt="line" id="line">
-            </div>
-        </div>
+        <link rel="stylesheet" href="css/landingpage.css" />
+        <link rel="stylesheet" href="css/sidebar.css" />
 
-        <aside>
-            <div id="sidebar" class="sidebar-displayoff"> <!-- -displayoff to deaktivate-->
-                <a href="mailto:leon.salenbacher.contact@gmail.com">
-                    <div class="sidebar-icon">
-                        <img src="./img/social-icons/email_icon.png" alt="email-icon">
-                    </div>
-                </a>
-                <div class="sidebar-icon" onclick="openURL_newTab('https://github.com/Leon-Salenbacher')">
-                    <img src="./img/social-icons/github_icon.png" alt="github-icon">
-                </div>
-                <div class="sidebar-icon" onclick="openURL_newTab('https://www.linkedin.com/in/leon-salenbacher-44a6b818b')">
-                    <img src="./img/social-icons/linkedIn_icon.png" alt="linkedin-icon">
-                </div>
-                <div>
-                    <img src="./img/social-icons/sidebar-line.png">
-                </div>
-            </div>
-        </aside>
+        <link rel="stylesheet" href="css/skill.css" />
+        <link rel="stylesheet" href="css/project.css" />
+        <link rel="stylesheet" href="css/contact.css" />
 
-        <section>
+        <link rel="stylesheet" href="css/quote1.css" />
+        <link rel="stylesheet" href="css/quote2.css" />
+        <link rel="stylesheet" href="css/quote3.css" />
+
+        <script
+            type="text/javascript"
+            src="./scripts/project.js"
+            defer
+        ></script>
+        <script type="text/javascript" src="./scripts/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav id="nav-bar">
+                <a href="#skill-link">Skills</a>
+                <a href="#project-link">Projects</a>
+                <a href="#contact-link">CONTACT ME</a>
+            </nav>
+        </header>
+        <main>
             <div class="big-box">
-                <div class="content-container" id="quote1-container">
-                    <div id="quote1">
-                        <h1 class="part animation-state-0">"DO WHAT YOU LOVE</h1>
-                        <h1 class="part animation-state-0">LOVE WHAT YOU DO"</h1>
-                        <img src="./img/quotes/quote1/triangle.png" alt="triangle">
-                    </div>
+                <div class="content-container" id="landingpage">
+                    <section>
+                        <div id="landing-main-content">
+                            <div id="text-container">
+                                <h1>Hi,</h1>
+                                <div id="inner">
+                                    <div id="rotated">
+                                        <h2>I'm</h2>
+                                    </div>
+                                    <div id="name">
+                                        <h3>Leon Salenbacher</h3>
+                                        <h4>software-developer</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="landing-icons">
+                                <a
+                                    href="mailto:leon.salenbacher.contact@gmail.com"
+                                >
+                                    <div class="landing-icon">
+                                        <img
+                                            src="./img/social-icons/email_icon.png"
+                                            alt="email-icon"
+                                        />
+                                    </div>
+                                </a>
+                                <div
+                                    class="landing-icon"
+                                    onclick="openURL_newTab('https://github.com/Leon-Salenbacher')"
+                                >
+                                    <img
+                                        src="./img/social-icons/github_icon.png"
+                                        alt="github-icon"
+                                    />
+                                </div>
+                                <div
+                                    class="landing-icon"
+                                    onclick="openURL_newTab('https://www.linkedin.com/in/leon-salenbacher-44a6b818b')"
+                                >
+                                    <img
+                                        src="./img/social-icons/linkedIn_icon.png"
+                                        alt="linkedin-icon"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <aside>
+                        <div id="personal-img-container">
+                            <img src="./img/personal_img.png" alt="personal" />
+                        </div>
+                    </aside>
+                    <img src="./img/landing_line.png" alt="line" id="line" />
                 </div>
             </div>
-        </section>
-        
-        <section id="skill-link">
-            <div class="big-box" id="skill-box">
-                <div class="content-container" id="skill-container">
-                    <h1 class="content-headline">SKILLS</h1>
-                    <div id="skillset">
-                        <div class="skill-icon">
-                            <img src="./img/skills/html_icon.png" alt="html">
-                            <h2>HTML</h2>
-                        </div>
-                        <div class="skill-icon">
-                            <img src="./img/skills/css_icon.png" alt="css">
-                            <h2>CSS</h2>
-                        </div>
-                        <div class="skill-icon">
-                            <img src="./img/skills/react_icon.png" alt="react">
-                            <h2>REACT</h2>
-                        </div>
-                        <div class="skill-icon">
-                            <img src="./img/skills/javascript_icon.png" alt="javascript">
-                            <h2>JAVASCRIPT</h2>
-                        </div>
-                        <div class="skill-icon">
-                            <img src="./img/skills/python_icon.png" alt="python">
-                            <h2>PYTHON</h2>
-                        </div>
-                        <div class="skill-icon">
-                            <img src="./img/skills/mysql_icon.png" alt="mysql">
-                            <h2>MySQL</h2>
-                        </div>
-                        <div class="skill-icon">
-                            <img src="./img/skills/german_icon.png" alt="german">
-                            <h2>GERMAN<br>C1/C2</h2>
-                        </div>
-                        <div class="skill-icon">
-                            <img src="./img/skills/english_icon.png" alt="english">
-                            <h2>ENGLISH<br>B1/B2</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section>
-            <div class="big-box">
-                <div class="content-container" id="quote2-container">
-                    <div id="quote2">   
-                        <h1 class="part animation-state-0">"If you cannot do<br>Great things</h1>
-                        <h1 class="part animation-state-0">Do small things<br>in a great way."</h1>
-                        <img class="animation-state-0" src="./img/quotes/quote2/circle_purple.png" alt="purpel-circle">
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="project-link">
-            <div class="big-box">
-                <div class="content-container" id="project-container">
-                    <h1 class="content-headline">PROJECTS</h1>
-                    <div id="project-show-container">  
-                        <div id="project-title-container">
-                            <div class="project-title-higlighter">
-                                <img src="./img/project/icons/highlight-line.png" alt="----------------">
+            <aside>
+                <div id="sidebar" class="sidebar-displayoff">
+                    <!-- -displayoff to deaktivate-->
+                    <a href="mailto:leon.salenbacher.contact@gmail.com">
+                        <div class="sidebar-icon">
+                            <img
+                                src="./img/social-icons/email_icon.png"
+                                alt="email-icon"
+                            />
+                        </div>
+                    </a>
+                    <div
+                        class="sidebar-icon"
+                        onclick="openURL_newTab('https://github.com/Leon-Salenbacher')"
+                    >
+                        <img
+                            src="./img/social-icons/github_icon.png"
+                            alt="github-icon"
+                        />
+                    </div>
+                    <div
+                        class="sidebar-icon"
+                        onclick="openURL_newTab('https://www.linkedin.com/in/leon-salenbacher-44a6b818b')"
+                    >
+                        <img
+                            src="./img/social-icons/linkedIn_icon.png"
+                            alt="linkedin-icon"
+                        />
+                    </div>
+                    <div>
+                        <img src="./img/social-icons/sidebar-line.png" />
+                    </div>
+                </div>
+            </aside>
+
+            <section>
+                <div class="big-box">
+                    <div class="content-container" id="quote1-container">
+                        <div id="quote1">
+                            <h1 class="part animation-state-0">
+                                "DO WHAT YOU LOVE
+                            </h1>
+                            <h1 class="part animation-state-0">
+                                LOVE WHAT YOU DO"
+                            </h1>
+                            <img
+                                src="./img/quotes/quote1/triangle.png"
+                                alt="triangle"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skill-link">
+                <div class="big-box" id="skill-box">
+                    <div class="content-container" id="skill-container">
+                        <h1 class="content-headline">SKILLS</h1>
+                        <div id="skillset">
+                            <div class="skill-icon">
+                                <img
+                                    src="./img/skills/html_icon.png"
+                                    alt="html"
+                                />
+                                <h2>HTML</h2>
                             </div>
-                            <h2 id="project_name">Pathfinding Visualizer</h2>
-                            <div class="project-title-higlighter">
-                                <img src="./img/project/icons/highlight-line.png" alt="----------------">
+                            <div class="skill-icon">
+                                <img
+                                    src="./img/skills/css_icon.png"
+                                    alt="css"
+                                />
+                                <h2>CSS</h2>
+                            </div>
+                            <div class="skill-icon">
+                                <img
+                                    src="./img/skills/react_icon.png"
+                                    alt="react"
+                                />
+                                <h2>REACT</h2>
+                            </div>
+                            <div class="skill-icon">
+                                <img
+                                    src="./img/skills/javascript_icon.png"
+                                    alt="javascript"
+                                />
+                                <h2>JAVASCRIPT</h2>
+                            </div>
+                            <div class="skill-icon">
+                                <img
+                                    src="./img/skills/java_icon.png"
+                                    alt="javascript"
+                                />
+                                <h2>Java</h2>
+                            </div>
+                            <div class="skill-icon">
+                                <img
+                                    src="./img/skills/javascript_icon.png"
+                                    alt="javascript"
+                                />
+                                <h2>SpringBoot</h2>
+                            </div>
+                            <div class="skill-icon">
+                                <img
+                                    src="./img/skills/javascript_icon.png"
+                                    alt="javascript"
+                                />
+                                <h2>JAVASCRIPT</h2>
+                            </div>
+                            <div class="skill-icon">
+                                <img
+                                    src="./img/skills/javascript_icon.png"
+                                    alt="javascript"
+                                />
+                                <h2>JAVASCRIPT</h2>
+                            </div>
+                            <div class="skill-icon">
+                                <img
+                                    src="./img/skills/javascript_icon.png"
+                                    alt="javascript"
+                                />
+                                <h2>JAVASCRIPT</h2>
+                            </div>
+                            <div class="skill-icon">
+                                <img
+                                    src="./img/skills/python_icon.png"
+                                    alt="python"
+                                />
+                                <h2>PYTHON</h2>
+                            </div>
+                            <div class="skill-icon">
+                                <img
+                                    src="./img/skills/mysql_icon.png"
+                                    alt="mysql"
+                                />
+                                <h2>MySQL</h2>
+                            </div>
+                            <div class="skill-icon">
+                                <img
+                                    src="./img/skills/german_icon.png"
+                                    alt="german"
+                                />
+                                <h2>GERMAN<br />C1/C2</h2>
+                            </div>
+                            <div class="skill-icon">
+                                <img
+                                    src="./img/skills/english_icon.png"
+                                    alt="english"
+                                />
+                                <h2>ENGLISH<br />B1/B2</h2>
                             </div>
                         </div>
-                        <div id="project-show" onclick="openURL_newTab('https://leon-bou.github.io/pathfindingVisualizer/')">
-                            <img 
-                                id="project_img"
-                                src="./img/project/projects/pathfinding_visualizer.png" 
-                                alt="pathfinding-visualizer"  
-                            > 
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="big-box">
+                    <div class="content-container" id="quote2-container">
+                        <div id="quote2">
+                            <h1 class="part animation-state-0">
+                                "If you cannot do<br />Great things
+                            </h1>
+                            <h1 class="part animation-state-0">
+                                Do small things<br />in a great way."
+                            </h1>
+                            <img
+                                class="animation-state-0"
+                                src="./img/quotes/quote2/circle_purple.png"
+                                alt="purpel-circle"
+                            />
                         </div>
-                        <div id="slider-container">
-                            <div id="slider">
-                                <div class="slider-item-container" onclick="project_left()">
-                                    <img 
-                                        alt="slider-left" 
-                                        src="./img/project/icons/left_slide.png"
+                    </div>
+                </div>
+            </section>
+
+            <section id="project-link">
+                <div class="big-box">
+                    <div class="content-container" id="project-container">
+                        <h1 class="content-headline">PROJECTS</h1>
+                        <div id="project-show-container">
+                            <div id="project-title-container">
+                                <div class="project-title-higlighter">
+                                    <img
+                                        src="./img/project/icons/highlight-line.png"
+                                        alt="----------------"
+                                    />
+                                </div>
+                                <h2 id="project_name">
+                                    Pathfinding Visualizer
+                                </h2>
+                                <div class="project-title-higlighter">
+                                    <img
+                                        src="./img/project/icons/highlight-line.png"
+                                        alt="----------------"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                id="project-show"
+                                onclick="openURL_newTab('https://leon-bou.github.io/pathfindingVisualizer/')"
+                            >
+                                <img
+                                    id="project_img"
+                                    src="./img/project/projects/pathfinding_visualizer.png"
+                                    alt="pathfinding-visualizer"
+                                />
+                            </div>
+                            <div id="slider-container">
+                                <div id="slider">
+                                    <div
+                                        class="slider-item-container"
+                                        onclick="project_left()"
                                     >
-                                </div>
-                                <div class="slider-item-container" onclick="project_click(0)">
-                                    <div id="project_slider" class="slider-item selected"></div>
-                                </div>
-                                <div class="slider-item-container" onclick="project_click(1)">
-                                    <div id="project_slider" class="slider-item"></div>
-                                </div>
-                                <div class="slider-item-container" onclick="project_click(2)">
-                                    <div id="project_slider" class="slider-item"></div>
-                                </div>
-                                <div class="slider-item-container" onclick="project_right()">
-                                    <img 
-                                        alt="slider-right" 
-                                        src="./img/project/icons/right_slide.png"
+                                        <img
+                                            alt="slider-left"
+                                            src="./img/project/icons/left_slide.png"
+                                        />
+                                    </div>
+                                    <div
+                                        class="slider-item-container"
+                                        onclick="project_click(0)"
                                     >
+                                        <div
+                                            id="project_slider"
+                                            class="slider-item selected"
+                                        ></div>
+                                    </div>
+                                    <div
+                                        class="slider-item-container"
+                                        onclick="project_click(1)"
+                                    >
+                                        <div
+                                            id="project_slider"
+                                            class="slider-item"
+                                        ></div>
+                                    </div>
+                                    <div
+                                        class="slider-item-container"
+                                        onclick="project_click(2)"
+                                    >
+                                        <div
+                                            id="project_slider"
+                                            class="slider-item"
+                                        ></div>
+                                    </div>
+                                    <div
+                                        class="slider-item-container"
+                                        onclick="project_right()"
+                                    >
+                                        <img
+                                            alt="slider-right"
+                                            src="./img/project/icons/right_slide.png"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div class="big-box">
-                <div class="content-container" id="quote3-container">
-                    <div id="quote3">
-                        <h1 class="text-part">"I can do things<br>you cannot,</h1>
-                        <h2 class="text-part">you can do<br>things i cannot.</h2>
-                        <h3 class="text-part">Together we can<br>do great Things."</h3>
-                        <img src="./img/quotes/quote3/triangle+letters.png" alt="triangle1">
+            <section>
+                <div class="big-box">
+                    <div class="content-container" id="quote3-container">
+                        <div id="quote3">
+                            <h1 class="text-part">
+                                "I can do things<br />you cannot,
+                            </h1>
+                            <h2 class="text-part">
+                                you can do<br />things i cannot.
+                            </h2>
+                            <h3 class="text-part">
+                                Together we can<br />do great Things."
+                            </h3>
+                            <img
+                                src="./img/quotes/quote3/triangle+letters.png"
+                                alt="triangle1"
+                            />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="contact-link">
-            <div class="big-box">
-                <div class="content-container" id="contact-container">
-                    <h1 class="content-headline">CONTACT</h1>
-                    <div id="form-container">
-                        <form id="contactForm">
-                            <input class="form-item" type="text" id="name_input" name="Name" placeholder="NAME">
-                            <input class="form-item" type="text" id="email" name="email" placeholder="EMAIL">
-                            <input class="form-item" type="tel" id="phoneNumber" placeholder="PHONE NUMBER">
-                            <textarea class="form-item" id="message" name="message" placeholder="YOUR MESSAGE"></textarea>
-                            <button type="submit">SUBMIT</button>
-                        </form>
+            <section id="contact-link">
+                <div class="big-box">
+                    <div class="content-container" id="contact-container">
+                        <h1 class="content-headline">CONTACT</h1>
+                        <div id="form-container">
+                            <form id="contactForm">
+                                <input
+                                    class="form-item"
+                                    type="text"
+                                    id="name_input"
+                                    name="Name"
+                                    placeholder="NAME"
+                                />
+                                <input
+                                    class="form-item"
+                                    type="text"
+                                    id="email"
+                                    name="email"
+                                    placeholder="EMAIL"
+                                />
+                                <input
+                                    class="form-item"
+                                    type="tel"
+                                    id="phoneNumber"
+                                    placeholder="PHONE NUMBER"
+                                />
+                                <textarea
+                                    class="form-item"
+                                    id="message"
+                                    name="message"
+                                    placeholder="YOUR MESSAGE"
+                                ></textarea>
+                                <button type="submit">SUBMIT</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-</body>
+            </section>
+        </main>
+    </body>
 </html>
