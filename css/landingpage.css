@@ -1,23 +1,3 @@
-@-webkit-keyframes border-animation {
-  0% {
-    border-top: solid;
-  }
-  25% {
-    border-top: solid;
-    border-right: solid;
-  }
-  50% {
-    border-top: solid;
-    border-right: solid;
-    border-bottom: solid;
-  }
-  100% {
-    border-top: solid;
-    border-right: solid;
-    border-bottom: solid;
-    border-left: solid;
-  }
-}
 @keyframes border-animation {
   0% {
     border-top: solid;
@@ -38,16 +18,6 @@
     border-left: solid;
   }
 }
-@-webkit-keyframes sidebar-animation {
-  from {
-    bottom: 12%;
-    left: -60px;
-  }
-  to {
-    bottom: 12%;
-    left: 4%;
-  }
-}
 @keyframes sidebar-animation {
   from {
     bottom: 12%;
@@ -63,18 +33,12 @@
     width: 580px;
   }
   #landingpage {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #landingpage section {
     width: 50%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   #landingpage section #text-container h1 {
     font-size: 75px;
@@ -94,12 +58,8 @@
   }
   #landingpage aside {
     width: 50%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   #landingpage aside #personal-img-container {
     width: min(68%, 650px);
@@ -121,15 +81,9 @@
   #landingpage section {
     width: 100%;
     grid-area: 1/1/2/2;
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: start !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    justify-content: start !important;
+    align-items: center !important;
     margin-bottom: -20%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #landingpage section #landing-main-content {
@@ -155,18 +109,14 @@
   #landingpage aside {
     width: 100%;
     grid-area: 2/1/3/2;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
+    align-items: flex-start !important;
   }
 }
 @media only screen and (max-width: 1299px) and (min-width: 650px) {
   #landingpage aside {
     margin-top: -10%;
     margin-left: 2%;
-    -webkit-box-pack: end !important;
-        -ms-flex-pack: end !important;
-            justify-content: end !important;
+    justify-content: end !important;
   }
   #landingpage aside #personal-img-container {
     margin-right: 10%;
@@ -176,9 +126,7 @@
 }
 @media only screen and (max-width: 1299px) and (max-width: 650px) {
   #landingpage aside {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   #landingpage aside #personal-img-container {
     margin-top: 5%;
@@ -196,12 +144,8 @@ header {
   position: absolute;
   z-index: 100;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
   min-width: 600px;
 }
 header #nav-bar {
@@ -209,12 +153,8 @@ header #nav-bar {
   margin-right: 5%;
   /* right: 5%;
   top: 3.5%; */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 header #nav-bar a {
   padding: 10px 25px;
@@ -240,15 +180,9 @@ header #nav-bar a:last-of-type:hover {
 }
 #landingpage section {
   z-index: 4;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 #landingpage section #landing-main-content {
   display: grid;
@@ -256,17 +190,13 @@ header #nav-bar a:last-of-type:hover {
 #landingpage section #landing-main-content #text-container {
   display: grid;
   grid-template-rows: 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 #landingpage section #landing-main-content #text-container h1 {
   font-weight: bolder;
   margin-left: 2%;
 }
 #landingpage section #landing-main-content #text-container #inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 #landingpage section #landing-main-content #text-container #inner #rotated {
@@ -274,8 +204,7 @@ header #nav-bar a:last-of-type:hover {
 }
 #landingpage section #landing-main-content #text-container #inner #rotated h2 {
   text-align: center;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   margin-top: 38%;
 }
 #landingpage section #landing-main-content #text-container #inner #name {
@@ -286,8 +215,6 @@ header #nav-bar a:last-of-type:hover {
   margin-top: -0.5%;
 }
 #landingpage section #landing-main-content #landing-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
   margin-top: 10%;
@@ -296,19 +223,12 @@ header #nav-bar a:last-of-type:hover {
 #landingpage section #landing-main-content #landing-icons .landing-icon {
   width: clamp(50px, 3vw, 70px);
   height: clamp(50px, 3vw, 70px);
-  -webkit-box-shadow: 0px 0.25vw 0.25vw rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0.25vw 0.25vw rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0.25vw 0.25vw rgba(0, 0, 0, 0.25);
   background-color: #C4C4C4;
   border-radius: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 #landingpage section #landing-main-content #landing-icons .landing-icon:hover {
@@ -321,8 +241,6 @@ header #nav-bar a:last-of-type:hover {
 }
 #landingpage aside {
   z-index: 4;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 #landingpage aside #personal-img-container {
@@ -336,12 +254,8 @@ header #nav-bar a:last-of-type:hover {
   margin-left: 8vw;
   overflow: hidden;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 #landingpage aside #personal-img-container img {
   height: auto;
