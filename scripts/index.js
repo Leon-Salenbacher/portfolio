@@ -101,8 +101,8 @@ const projects = [
         0
     ),
     new Project(
-        'coming soon',
-        './img/project/projects/coming_soon.png',
+        'PortShare',
+        './img/project/projects/portShare.png',
         undefined,
         1
     ),
