@@ -103,7 +103,7 @@ const projects = [
     new Project(
         'PortShare',
         './img/project/projects/portShare.png',
-        undefined,
+        "http://portshare.org/",
         1
     ),
     new Project(
